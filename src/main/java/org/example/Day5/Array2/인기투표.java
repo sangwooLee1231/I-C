@@ -1,4 +1,4 @@
-package Day5.Array2;
+package org.example.Day5.Array2;
 
 import java.util.Scanner;
 

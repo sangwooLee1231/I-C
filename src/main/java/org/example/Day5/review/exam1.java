@@ -1,4 +1,4 @@
-package org.example.day5.review;
+package org.example.Day5.review;
 
 public class exam1 {
     public static void main(String[] args) {
