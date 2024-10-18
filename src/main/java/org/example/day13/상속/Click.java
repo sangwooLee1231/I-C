@@ -20,11 +20,7 @@ public class Click {
         
         frame.add(l1);
 
-        l1.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent e) {
 
-            }
-        })
 
 
 

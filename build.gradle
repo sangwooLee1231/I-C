@@ -11,11 +11,13 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.jsoup:jsoup:1.18.1'
+
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    // https://mvnrepository.com/artifact/org.jsoup/jsoup
-    implementation 'org.jsoup:jsoup:1.18.1'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation 'org.apache.poi:poi:5.2.5'
 }
 
 test {
