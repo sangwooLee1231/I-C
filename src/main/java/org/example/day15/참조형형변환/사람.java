@@ -1,13 +1,10 @@
-package org.example.day12.상속;
+package org.example.day15.참조형형변환;
 
 public class 사람 {
     char gender;
     String name;
 
-    public 사람(char gender, String name) {
-        this.gender = gender;
-        this.name = name;
-    }
+
 
     public void 잠자다(){
         System.out.println("잠자는 중.");

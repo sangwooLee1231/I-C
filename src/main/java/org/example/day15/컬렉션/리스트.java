@@ -1,4 +1,4 @@
-package org.example.day15.제너릭;
+package org.example.day15.컬렉션;
 
 import java.util.ArrayList;
 

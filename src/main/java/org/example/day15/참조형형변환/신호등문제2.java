@@ -6,8 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class 신호등문제2 {
+    static JFrame f;
     public static void main(String[] args) {
-        JFrame f = new JFrame("나의 신호등");
+        f = new JFrame("나의 신호등");
         f.setSize(600,700);
         f.getContentPane().setBackground(Color.black);
         // JFrame에는 배경색 설정 기능이 없어 판을 만들어 색칠해주는 것
@@ -38,43 +39,27 @@ public class 신호등문제2 {
 
         red.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    // 이미지 만들어서 라벨에 껴서 프레임에 add해주자.!
-                    JLabel label = new JLabel();
-                    ImageIcon icon = new ImageIcon("r.png");
-                    label.setIcon(icon);
-                    f.add(label);
-                    f.setVisible(true);
-
                 }
         });
         yellow.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // 이미지 만들어서 라벨에 껴서 프레임에 add해주자.!
-                JLabel label = new JLabel();
-                ImageIcon icon = new ImageIcon("y.png");
-                label.setIcon(icon);
-                f.add(label);
-                f.setVisible(true);
-
             }
         });
         green.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // 이미지 만들어서 라벨에 껴서 프레임에 add해주자.!
-                JLabel label = new JLabel();
-                ImageIcon icon = new ImageIcon("g.png");
-                label.setIcon(icon);
-                f.add(label);
-                f.setVisible(true);
-
-
             }
         });
 
         f.setVisible(true);
 
         //맨 끝!
+    }
 
-
+    public static void show() {
+        JLabel label = new JLabel();
+        ImageIcon icon = new ImageIcon();
+        label.setIcon(icon);
+        f.add(label);
+        f.setVisible(true);
     }
 }
