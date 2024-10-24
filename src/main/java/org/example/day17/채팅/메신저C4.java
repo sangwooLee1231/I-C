@@ -55,7 +55,6 @@ public class 메신저C4 extends JFrame{
                 input.setText("");
                 try {
                     byte[] data2 = data.getBytes();
-                    InetAddress ip = InetAddress.getByName("localhost");
 
                     for (int port : ports) {
                         System.out.println("--" + port);

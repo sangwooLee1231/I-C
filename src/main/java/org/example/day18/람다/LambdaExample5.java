@@ -1,9 +1,10 @@
 package org.example.day18.람다;
 
-public class LambdaExample3 {
+public class LambdaExample5 {
     public static void main(String[] args) {
-        StringFunctionalInterface toUpperCase =  a -> a.toUpperCase();
-        String Input = toUpperCase.convert("sadfqwer");
-        System.out.println(Input);
+        DifferenceFunctionalInterface Difference = (a,b) -> a - b;
+
+        int result = Difference.subtract(20,3);
+        System.out.println(result);
     }
 }

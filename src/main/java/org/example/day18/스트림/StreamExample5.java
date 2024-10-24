@@ -2,11 +2,14 @@ package org.example.day18.스트림;
 
 import java.util.Arrays;
 import java.util.List;
-public class StreamExample4 {
+
+import static java.util.Arrays.stream;
+
+public class StreamExample5 {
     public static void main(String[] args) {
-        List<String> words = Arrays.asList("apple", "banana", "cherry", "date");
-        words.stream().map(a -> a.charAt(0)).forEach(System.out::println);
-        // words.stream().map(a -> a.subString(0,1)).forEach(System.out::println);
+            List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+
+        numbers.stream().filter(a -> a%2==1).map(a->a*a).forEach(System.out::println);
 
     }
 }

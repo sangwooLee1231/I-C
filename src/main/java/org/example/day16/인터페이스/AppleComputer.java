@@ -8,7 +8,7 @@ public class AppleComputer implements Computer {
 
     @Override
     public void shutdown() {
-        System.out.println("애플컴퓨터는 절전기능이 뛰어나 일정 시간이 지나면 shutdown됩니다.");
+        System.out.println("애플컴퓨터는 절전기능이 뛰어나 일정 시간이 지나면 shutdown 됩니다.");
     }
 
     @Override

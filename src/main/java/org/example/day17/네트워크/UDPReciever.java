@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
-public class UDP받는애 {
+public class UDPReciever {
     public static void main(String[] args) throws IOException {
         //공간 다 만들어두고 받을 준비를 먼저 하고 있어야 함.
         //누군가가 ip+port로 보내면 자동으로 받게해야함.

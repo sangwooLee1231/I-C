@@ -11,7 +11,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class 메신저A4 extends JFrame {
-    public static ArrayList<Integer> ports = new ArrayList<>(Arrays.asList(5555, 7777, 9999));
+    public static ArrayList<Integer> ports =
+            new ArrayList<>(Arrays.asList(5555, 7777, 9999));
 
     JTextArea list;
     DatagramSocket socket; // 소켓을 멤버 변수로 선언
@@ -26,7 +27,7 @@ public class 메신저A4 extends JFrame {
 //        ports.add(9999);
 
         System.out.println(ports);
-        ip = InetAddress.getByName("localhost");
+        ip = InetAddress.getByName("192.168.60.51");
         System.out.println("생성자 시작.");
         setTitle("메신저A4 방장부터 시작! 이후부터는 단체톡");
         setSize(500, 250);
@@ -88,8 +89,6 @@ public class 메신저A4 extends JFrame {
             System.out.println("a에서 확인 >> " + packet.getAddress());
             System.out.println("a에서 확인 >> " + packet.getPort());
             port = packet.getPort();
-            String data2 = new String(data).trim() + "\n";
-            byte[] data3 = data2.getBytes();
             list.append(port + ": " + new String(data).trim() + "\n");
         }
     }

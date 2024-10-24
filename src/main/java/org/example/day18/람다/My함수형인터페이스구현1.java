@@ -1,15 +1,8 @@
 package org.example.day18.람다;
 
-public class LambdaExample {
-    public static void main(String[] args) {
-        void my메서드 // 추상메서드
-
-
+public class My함수형인터페이스구현1 implements My함수형인터페이스{
+    @Override
+    public void my메서드() {
+        System.out.println("1번 이름있는 클래스로 구현함.");
     }
-
-    public void myMethod() {
-        System.out.println("정통적인 방식으로 메서드 실행");
-    }
-
 }
-

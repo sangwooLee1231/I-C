@@ -1,4 +1,4 @@
-package org.example.day18.람다;
+package org.example.day18.스트림;
 
 public class Person {
     public void action1(Workable w, String name, String job) {
