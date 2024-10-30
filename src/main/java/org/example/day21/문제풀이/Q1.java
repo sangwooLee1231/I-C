@@ -44,7 +44,7 @@ public class Q1 {
         Collections.reverse(list3);
         IntStream arr3 = list3.stream().mapToInt(Integer::valueOf);
         arr3.forEach(i -> System.out.print(i + " "));
-
+    
 
     }
 }

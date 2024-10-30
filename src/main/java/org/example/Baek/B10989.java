@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class B10989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(br.readLine());
         int[] count = new int[10001];  // 숫자의 범위가 1 ~ 10000이므로 크기가 10001인 배열 생성
@@ -17,7 +18,6 @@ public class B10989 {
             count[num]++;
         }
 
-        StringBuilder sb = new StringBuilder();
 
         // 카운트 배열을 이용해 정렬된 숫자 출력
         for (int i = 1; i < 10001; i++) {
