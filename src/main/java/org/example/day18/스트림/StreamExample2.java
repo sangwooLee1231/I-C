@@ -3,7 +3,6 @@ package org.example.day18.스트림;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.apache.commons.collections4.IteratorUtils.forEach;
 
 public class StreamExample2 {
     public static void main(String[] args) {
